@@ -18,7 +18,7 @@ from IPython.display import Markdown
 # os.environ['OPENAI_API_KEY'] = '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'
 
 def generate_response(txt):
-    llm = OpenAI(temperature = 0, OPENAI_API_KEY = openai_api_key)
+    llm = OpenAI(temperature = 0, openai_api_key = openai_api_key)
 
     text_splitter = CharacterTextSplitter()
     
